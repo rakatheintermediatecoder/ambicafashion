@@ -1,0 +1,152 @@
+/* CSS */
+*{
+    box-sizing: border-box;
+}
+
+.button-52 {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #fff;
+}
+
+.button-52:after {
+    content: "";
+    background-color: #f22000;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.button-52:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .button-52 {
+        padding: 13px 50px 13px;
+    }
+}
+
+.container {
+    height: 50px;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ====================================== */
+/* ---------------search bar------------- */
+/* ====================================== */
+.form {
+    --color-light: #fff;
+    --color-brand: #f22000;
+    --font-fam: "Lato", sans-serif;
+    --height: 5rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+    width: 70vw;
+    border: 3px solid var(--color-brand);
+    margin: 3rem auto;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    background: var(--color-brand);
+    border-radius: var(--rad);
+}
+
+input,
+span {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 1.8rem;
+}
+
+#productSearch {
+    outline: 0;
+    width: 95%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    appearance: none;
+    z-index: 1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form span {
+    display: none;
+    width: 5%;
+    font-weight: bold;
+    background: var(--color-brand);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    font-size: 1.5rem;
+}
+table *{
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+table tbody tr td a{
+    background: red;
+    font-size: 1rem;
+    padding: 1.3rem;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+table tbody tr td a:hover{
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+h3 {
+    font-family: Quicksand;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.alert {
+    width: 30%;
+    margin: 20px auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+    background: #a8f0c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(500px);
+}
+.error{
+    background-color: #f7a7a3;
+}
+
+.showPopUp{
+    animation: show 5s ease-in-out 1;
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    15%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+}

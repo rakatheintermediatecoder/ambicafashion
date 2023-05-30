@@ -1,0 +1,26 @@
+#loader{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #353742;
+}
+
+#loader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: load 1s infinite ease;
+}
+
+@keyframes load{
+    0%{
+        transform: translate(-50%,-50%) scale(0.1);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
